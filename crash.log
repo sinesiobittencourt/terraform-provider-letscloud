@@ -1,0 +1,647 @@
+2021/05/01 17:52:14 [INFO] Terraform version: 0.14.7
+2021/05/01 17:52:14 [INFO] Go runtime version: go1.15.6
+2021/05/01 17:52:14 [INFO] CLI args: []string{"/usr/local/bin/terraform", "plan"}
+2021/05/01 17:52:14 [DEBUG] Attempting to open CLI config file: /home/sinesio/.terraformrc
+2021/05/01 17:52:14 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2021/05/01 17:52:14 [DEBUG] checking for credentials in "/home/sinesio/.terraform.d/plugins"
+2021/05/01 17:52:14 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2021/05/01 17:52:14 [DEBUG] will search for provider plugins in /home/sinesio/.terraform.d/plugins
+2021/05/01 17:52:14 [TRACE] getproviders.SearchLocalDirectory: /home/sinesio/.terraform.d/plugins is a symlink to /home/sinesio/.terraform.d/plugins
+2021/05/01 17:52:14 [WARN] local provider path "/home/sinesio/.terraform.d/plugins/sinesio (copy)/sinesio/example" contains invalid hostname "sinesio (copy)"; ignoring
+2021/05/01 17:52:14 [WARN] local provider path "/home/sinesio/.terraform.d/plugins/sinesio (copy)/sinesio/example/0.1.0" contains invalid hostname "sinesio (copy)"; ignoring
+2021/05/01 17:52:14 [WARN] local provider path "/home/sinesio/.terraform.d/plugins/sinesio (copy)/sinesio/example/0.1.0/linux_amd64" contains invalid hostname "sinesio (copy)"; ignoring
+2021/05/01 17:52:14 [WARN] local provider path "/home/sinesio/.terraform.d/plugins/sinesio (copy)/sinesio/example/0.1.0/linux_amd64/terraform-provider-example_v0.1.0" contains invalid hostname "sinesio (copy)"; ignoring
+2021/05/01 17:52:14 [WARN] local provider path "/home/sinesio/.terraform.d/plugins/sinesio (copy)/sinesio/example/index.json" contains invalid hostname "sinesio (copy)"; ignoring
+2021/05/01 17:52:14 [TRACE] getproviders.SearchLocalDirectory: found sinesio.com/cmdb/cmdb v2.0.0 for linux_amd64 at /home/sinesio/.terraform.d/plugins/sinesio.com/cmdb/cmdb/2.0.0/linux_amd64
+2021/05/01 17:52:14 [TRACE] getproviders.SearchLocalDirectory: found sinesio.com/cmdb/cmdb v3.0.0 for linux_amd64 at /home/sinesio/.terraform.d/plugins/sinesio.com/cmdb/cmdb/3.0.0/linux_amd64
+2021/05/01 17:52:14 [TRACE] getproviders.SearchLocalDirectory: found sinesio.com/cmdb/provider v2.0.0 for linux_amd64 at /home/sinesio/.terraform.d/plugins/sinesio.com/cmdb/provider/2.0.0/linux_amd64
+2021/05/01 17:52:14 [TRACE] getproviders.SearchLocalDirectory: found sinesio.com/letscloud/letscloud v3.0.0 for linux_amd64 at /home/sinesio/.terraform.d/plugins/sinesio.com/letscloud/letscloud/3.0.0/linux_amd64
+2021/05/01 17:52:14 [WARN] local provider path "/home/sinesio/.terraform.d/plugins/www.telmate.com/telmate/0.0.1" contains invalid type "0.0.1"; ignoring
+2021/05/01 17:52:14 [TRACE] getproviders.SearchLocalDirectory: found www.telmate.com/telmate/proxmox v0.1.0 for linux_amd64 at /home/sinesio/.terraform.d/plugins/www.telmate.com/telmate/proxmox/0.1.0/linux_amd64
+2021/05/01 17:52:14 [WARN] ignoring file "www.telmate.com/telmate/proxmox/index.json" as possible package for www.telmate.com/telmate/proxmox: filename lacks expected prefix "terraform-provider-proxmox_"
+2021/05/01 17:52:14 [DEBUG] ignoring non-existing provider search directory /home/sinesio/.local/share/terraform/plugins
+2021/05/01 17:52:14 [DEBUG] ignoring non-existing provider search directory /usr/share/ubuntu/terraform/plugins
+2021/05/01 17:52:14 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2021/05/01 17:52:14 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2021/05/01 17:52:14 [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2021/05/01 17:52:14 [INFO] CLI command args: []string{"plan"}
+2021/05/01 17:52:14 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2021/05/01 17:52:14 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2021/05/01 17:52:14 [DEBUG] New state was assigned lineage "e5791fab-84a3-5f53-e379-b9b73f4fb6ed"
+2021/05/01 17:52:14 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2021/05/01 17:52:14 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2021/05/01 17:52:14 [TRACE] providercache.fillMetaCache: scanning directory .terraform/providers
+2021/05/01 17:52:14 [TRACE] getproviders.SearchLocalDirectory: .terraform/providers is a symlink to .terraform/providers
+2021/05/01 17:52:14 [TRACE] getproviders.SearchLocalDirectory: found sinesio.com/letscloud/letscloud v3.0.0 for linux_amd64 at .terraform/providers/sinesio.com/letscloud/letscloud/3.0.0/linux_amd64
+2021/05/01 17:52:14 [TRACE] providercache.fillMetaCache: including .terraform/providers/sinesio.com/letscloud/letscloud/3.0.0/linux_amd64 as a candidate package for sinesio.com/letscloud/letscloud 3.0.0
+2021/05/01 17:52:14 [DEBUG] checking for provisioner in "."
+2021/05/01 17:52:14 [DEBUG] checking for provisioner in "/usr/local/bin"
+2021/05/01 17:52:14 [DEBUG] checking for provisioner in "/home/sinesio/.terraform.d/plugins"
+2021/05/01 17:52:14 [INFO] Failed to read plugin lock file .terraform/plugins/linux_amd64/lock.json: open .terraform/plugins/linux_amd64/lock.json: no such file or directory
+2021/05/01 17:52:14 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2021/05/01 17:52:14 [INFO] backend/local: starting Plan operation
+2021/05/01 17:52:14 [TRACE] backend/local: requesting state manager for workspace "default"
+2021/05/01 17:52:14 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2021/05/01 17:52:14 [TRACE] backend/local: requesting state lock for workspace "default"
+2021/05/01 17:52:14 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2021/05/01 17:52:14 [TRACE] statemgr.Filesystem: no previously-stored snapshot exists
+2021/05/01 17:52:14 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2021/05/01 17:52:14 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2021/05/01 17:52:14 [TRACE] backend/local: reading remote state for workspace "default"
+2021/05/01 17:52:14 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2021/05/01 17:52:14 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2021/05/01 17:52:14 [TRACE] statemgr.Filesystem: read nil snapshot
+2021/05/01 17:52:14 [TRACE] backend/local: retrieving local state snapshot for workspace "default"
+2021/05/01 17:52:14 [TRACE] backend/local: building context for current working directory
+2021/05/01 17:52:14 [TRACE] terraform.NewContext: starting
+2021/05/01 17:52:14 [TRACE] terraform.NewContext: loading provider schemas
+2021/05/01 17:52:14 [TRACE] LoadSchemas: retrieving schema for provider type "sinesio.com/letscloud/letscloud"
+2021-05-01T17:52:14.361-0300 [INFO]  plugin: configuring client automatic mTLS
+2021-05-01T17:52:14.394-0300 [DEBUG] plugin: starting plugin: path=.terraform/providers/sinesio.com/letscloud/letscloud/3.0.0/linux_amd64/terraform-provider-letscloud args=[.terraform/providers/sinesio.com/letscloud/letscloud/3.0.0/linux_amd64/terraform-provider-letscloud]
+2021-05-01T17:52:14.394-0300 [DEBUG] plugin: plugin started: path=.terraform/providers/sinesio.com/letscloud/letscloud/3.0.0/linux_amd64/terraform-provider-letscloud pid=184926
+2021-05-01T17:52:14.394-0300 [DEBUG] plugin: waiting for RPC address: path=.terraform/providers/sinesio.com/letscloud/letscloud/3.0.0/linux_amd64/terraform-provider-letscloud
+2021-05-01T17:52:14.401-0300 [INFO]  plugin.terraform-provider-letscloud: configuring server automatic mTLS: timestamp=2021-05-01T17:52:14.401-0300
+2021-05-01T17:52:14.437-0300 [DEBUG] plugin.terraform-provider-letscloud: plugin address: network=unix address=/tmp/plugin005042057 timestamp=2021-05-01T17:52:14.437-0300
+2021-05-01T17:52:14.437-0300 [DEBUG] plugin: using plugin: version=5
+2021/05/01 17:52:14 [TRACE] GRPCProvider: GetSchema
+2021-05-01T17:52:14.490-0300 [TRACE] plugin.stdio: waiting for stdio data
+2021-05-01T17:52:14.490-0300 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2021/05/01 17:52:14 [TRACE] No provider meta schema returned
+2021/05/01 17:52:14 [TRACE] GRPCProvider: Close
+2021-05-01T17:52:14.492-0300 [DEBUG] plugin: plugin process exited: path=.terraform/providers/sinesio.com/letscloud/letscloud/3.0.0/linux_amd64/terraform-provider-letscloud pid=184926
+2021-05-01T17:52:14.492-0300 [DEBUG] plugin: plugin exited
+2021/05/01 17:52:14 [TRACE] terraform.NewContext: complete
+2021/05/01 17:52:14 [TRACE] backend/local: finished building terraform.Context
+2021/05/01 17:52:14 [TRACE] backend/local: requesting interactive input, if necessary
+2021/05/01 17:52:14 [TRACE] Context.Input: Prompting for provider arguments
+2021/05/01 17:52:14 [TRACE] Context.Input: Provider provider.letscloud declared at main.tf:1,1-21
+2021/05/01 17:52:14 [TRACE] Context.Input: Prompting for provider.letscloud argument hostname
+2021/05/01 17:52:14 [DEBUG] command: asking for input: "provider.letscloud.hostname"
+2021/05/01 17:52:19 [TRACE] Context.Input: Input for provider.letscloud: map[string]cty.Value{"hostname":cty.StringVal("127.0.0.1")}
+2021/05/01 17:52:19 [TRACE] backend/local: running validation operation
+2021/05/01 17:52:19 [INFO] terraform: building graph: GraphTypeValidate
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2021/05/01 17:52:19 [TRACE] ConfigTransformer: Starting for path:
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+  data.name_details.vm_1_details - *terraform.NodeValidatableResource
+  ------
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.LocalTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.OutputTransformer
+2021/05/01 17:52:19 [TRACE] OutputTransformer: adding vm_1_name as *terraform.NodeApplyableOutput
+2021/05/01 17:52:19 [TRACE] OutputTransformer: adding vm_1_type as *terraform.NodeApplyableOutput
+2021/05/01 17:52:19 [TRACE] OutputTransformer: adding vm_1_details_raw as *terraform.NodeApplyableOutput
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+  data.name_details.vm_1_details - *terraform.NodeValidatableResource
+  output.vm_1_details_raw - *terraform.NodeApplyableOutput
+  output.vm_1_name - *terraform.NodeApplyableOutput
+  output.vm_1_type - *terraform.NodeApplyableOutput
+  ------
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.StateTransformer
+2021/05/01 17:52:19 [TRACE] StateTransformer: state is empty, so nothing to do
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2021/05/01 17:52:19 [TRACE] AttachResourceConfigTransformer: attaching to "data.name_details.vm_1_details" (*terraform.NodeValidatableResource) config from hcl.Range{Filename:"main.tf", Start:hcl.Pos{Line:13, Column:1, Byte:187}, End:hcl.Pos{Line:13, Column:35, Byte:221}}
+2021/05/01 17:52:19 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to data.name_details.vm_1_details
+2021/05/01 17:52:19 [TRACE] AttachResourceConfigTransformer: attaching to "data.name_allocation.vm_1_name" (*terraform.NodeValidatableResource) config from hcl.Range{Filename:"main.tf", Start:hcl.Pos{Line:6, Column:1, Byte:74}, End:hcl.Pos{Line:6, Column:35, Byte:108}}
+2021/05/01 17:52:19 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to data.name_allocation.vm_1_name
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.ProvisionerTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2021/05/01 17:52:19 [TRACE] ProviderConfigTransformer: attaching to "provider[\"sinesio.com/letscloud/letscloud\"]" provider configuration from main.tf:1,1-21
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+  data.name_details.vm_1_details - *terraform.NodeValidatableResource
+  output.vm_1_details_raw - *terraform.NodeApplyableOutput
+  output.vm_1_name - *terraform.NodeApplyableOutput
+  output.vm_1_type - *terraform.NodeApplyableOutput
+  provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  ------
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2021/05/01 17:52:19 [TRACE] ProviderTransformer: exact match for provider["sinesio.com/letscloud/letscloud"] serving data.name_details.vm_1_details
+2021/05/01 17:52:19 [DEBUG] ProviderTransformer: "data.name_details.vm_1_details" (*terraform.NodeValidatableResource) needs provider["sinesio.com/letscloud/letscloud"]
+2021/05/01 17:52:19 [TRACE] ProviderTransformer: exact match for provider["sinesio.com/letscloud/letscloud"] serving data.name_allocation.vm_1_name
+2021/05/01 17:52:19 [DEBUG] ProviderTransformer: "data.name_allocation.vm_1_name" (*terraform.NodeValidatableResource) needs provider["sinesio.com/letscloud/letscloud"]
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  data.name_details.vm_1_details - *terraform.NodeValidatableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  output.vm_1_details_raw - *terraform.NodeApplyableOutput
+  output.vm_1_name - *terraform.NodeApplyableOutput
+  output.vm_1_type - *terraform.NodeApplyableOutput
+  provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  ------
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  data.name_details.vm_1_details - *terraform.NodeValidatableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  output.vm_1_details_raw - *terraform.NodeApplyableOutput
+  output.vm_1_name - *terraform.NodeApplyableOutput
+  output.vm_1_type - *terraform.NodeApplyableOutput
+  provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  ------
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2021/05/01 17:52:19 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["sinesio.com/letscloud/letscloud"]
+2021/05/01 17:52:19 [TRACE] AttachSchemaTransformer: attaching resource schema to data.name_details.vm_1_details
+2021/05/01 17:52:19 [TRACE] AttachSchemaTransformer: attaching resource schema to data.name_allocation.vm_1_name
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2021/05/01 17:52:19 [DEBUG] ReferenceTransformer: "data.name_details.vm_1_details" references: [data.name_allocation.vm_1_name]
+2021/05/01 17:52:19 [DEBUG] ReferenceTransformer: "data.name_allocation.vm_1_name" references: []
+2021/05/01 17:52:19 [DEBUG] ReferenceTransformer: "output.vm_1_name" references: [data.name_allocation.vm_1_name]
+2021/05/01 17:52:19 [DEBUG] ReferenceTransformer: "output.vm_1_type" references: [data.name_details.vm_1_details]
+2021/05/01 17:52:19 [DEBUG] ReferenceTransformer: "output.vm_1_details_raw" references: [data.name_details.vm_1_details]
+2021/05/01 17:52:19 [DEBUG] ReferenceTransformer: "provider[\"sinesio.com/letscloud/letscloud\"]" references: []
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  data.name_details.vm_1_details - *terraform.NodeValidatableResource
+    data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  output.vm_1_details_raw - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details - *terraform.NodeValidatableResource
+  output.vm_1_name - *terraform.NodeApplyableOutput
+    data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+  output.vm_1_type - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details - *terraform.NodeValidatableResource
+  provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  ------
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.attachDataResourceDependenciesTransformer
+2021/05/01 17:52:19 [TRACE] attachDataDependenciesTransformer: data.name_details.vm_1_details depends on []
+2021/05/01 17:52:19 [TRACE] attachDataDependenciesTransformer: data.name_allocation.vm_1_name depends on []
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.attachDataResourceDependenciesTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  data.name_details.vm_1_details - *terraform.NodeValidatableResource
+    data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+    data.name_details.vm_1_details - *terraform.NodeValidatableResource
+    output.vm_1_details_raw - *terraform.NodeApplyableOutput
+    output.vm_1_name - *terraform.NodeApplyableOutput
+    output.vm_1_type - *terraform.NodeApplyableOutput
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  output.vm_1_details_raw - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details - *terraform.NodeValidatableResource
+  output.vm_1_name - *terraform.NodeApplyableOutput
+    data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+  output.vm_1_type - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details - *terraform.NodeValidatableResource
+  provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  ------
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  data.name_details.vm_1_details - *terraform.NodeValidatableResource
+    data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+    data.name_details.vm_1_details - *terraform.NodeValidatableResource
+    output.vm_1_details_raw - *terraform.NodeApplyableOutput
+    output.vm_1_name - *terraform.NodeApplyableOutput
+    output.vm_1_type - *terraform.NodeApplyableOutput
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  output.vm_1_details_raw - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details - *terraform.NodeValidatableResource
+  output.vm_1_name - *terraform.NodeApplyableOutput
+    data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+  output.vm_1_type - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details - *terraform.NodeValidatableResource
+  provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  provider["sinesio.com/letscloud/letscloud"] (close) - *terraform.graphNodeCloseProvider
+    data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+    data.name_details.vm_1_details - *terraform.NodeValidatableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  ------
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  data.name_details.vm_1_details - *terraform.NodeValidatableResource
+    data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+    data.name_details.vm_1_details - *terraform.NodeValidatableResource
+    output.vm_1_details_raw - *terraform.NodeApplyableOutput
+    output.vm_1_name - *terraform.NodeApplyableOutput
+    output.vm_1_type - *terraform.NodeApplyableOutput
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  output.vm_1_details_raw - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details - *terraform.NodeValidatableResource
+  output.vm_1_name - *terraform.NodeApplyableOutput
+    data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+  output.vm_1_type - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details - *terraform.NodeValidatableResource
+  provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  provider["sinesio.com/letscloud/letscloud"] (close) - *terraform.graphNodeCloseProvider
+    data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+    data.name_details.vm_1_details - *terraform.NodeValidatableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["sinesio.com/letscloud/letscloud"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  data.name_details.vm_1_details - *terraform.NodeValidatableResource
+    data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    output.vm_1_details_raw - *terraform.NodeApplyableOutput
+    output.vm_1_name - *terraform.NodeApplyableOutput
+    output.vm_1_type - *terraform.NodeApplyableOutput
+  output.vm_1_details_raw - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details - *terraform.NodeValidatableResource
+  output.vm_1_name - *terraform.NodeApplyableOutput
+    data.name_allocation.vm_1_name - *terraform.NodeValidatableResource
+  output.vm_1_type - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details - *terraform.NodeValidatableResource
+  provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  provider["sinesio.com/letscloud/letscloud"] (close) - *terraform.graphNodeCloseProvider
+    data.name_details.vm_1_details - *terraform.NodeValidatableResource
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["sinesio.com/letscloud/letscloud"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2021/05/01 17:52:19 [DEBUG] Starting graph walk: walkValidate
+2021/05/01 17:52:19 [TRACE] dag/walk: visiting "provider[\"sinesio.com/letscloud/letscloud\"]"
+2021/05/01 17:52:19 [TRACE] vertex "provider[\"sinesio.com/letscloud/letscloud\"]": starting visit (*terraform.NodeApplyableProvider)
+2021-05-01T17:52:19.519-0300 [INFO]  plugin: configuring client automatic mTLS
+2021-05-01T17:52:19.556-0300 [DEBUG] plugin: starting plugin: path=.terraform/providers/sinesio.com/letscloud/letscloud/3.0.0/linux_amd64/terraform-provider-letscloud args=[.terraform/providers/sinesio.com/letscloud/letscloud/3.0.0/linux_amd64/terraform-provider-letscloud]
+2021-05-01T17:52:19.557-0300 [DEBUG] plugin: plugin started: path=.terraform/providers/sinesio.com/letscloud/letscloud/3.0.0/linux_amd64/terraform-provider-letscloud pid=184966
+2021-05-01T17:52:19.557-0300 [DEBUG] plugin: waiting for RPC address: path=.terraform/providers/sinesio.com/letscloud/letscloud/3.0.0/linux_amd64/terraform-provider-letscloud
+2021-05-01T17:52:19.564-0300 [INFO]  plugin.terraform-provider-letscloud: configuring server automatic mTLS: timestamp=2021-05-01T17:52:19.564-0300
+2021-05-01T17:52:19.614-0300 [DEBUG] plugin.terraform-provider-letscloud: plugin address: address=/tmp/plugin189690708 network=unix timestamp=2021-05-01T17:52:19.614-0300
+2021-05-01T17:52:19.614-0300 [DEBUG] plugin: using plugin: version=5
+2021/05/01 17:52:19 [TRACE] BuiltinEvalContext: Initialized "provider[\"sinesio.com/letscloud/letscloud\"]" provider for provider["sinesio.com/letscloud/letscloud"]
+2021/05/01 17:52:19 [TRACE] buildProviderConfig for provider["sinesio.com/letscloud/letscloud"]: merging explicit config and input
+2021/05/01 17:52:19 [TRACE] GRPCProvider: GetSchema
+2021-05-01T17:52:19.668-0300 [TRACE] plugin.stdio: waiting for stdio data
+2021-05-01T17:52:19.669-0300 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2021/05/01 17:52:19 [TRACE] No provider meta schema returned
+2021/05/01 17:52:19 [TRACE] GRPCProvider: PrepareProviderConfig
+2021/05/01 17:52:19 [TRACE] vertex "provider[\"sinesio.com/letscloud/letscloud\"]": visit complete
+2021/05/01 17:52:19 [TRACE] dag/walk: visiting "data.name_allocation.vm_1_name"
+2021/05/01 17:52:19 [TRACE] vertex "data.name_allocation.vm_1_name": starting visit (*terraform.NodeValidatableResource)
+2021/05/01 17:52:19 [TRACE] GRPCProvider: ValidateDataSourceConfig
+2021/05/01 17:52:19 [TRACE] vertex "data.name_allocation.vm_1_name": visit complete
+2021/05/01 17:52:19 [TRACE] dag/walk: visiting "data.name_details.vm_1_details"
+2021/05/01 17:52:19 [TRACE] dag/walk: visiting "output.vm_1_name"
+2021/05/01 17:52:19 [TRACE] vertex "data.name_details.vm_1_details": starting visit (*terraform.NodeValidatableResource)
+2021/05/01 17:52:19 [TRACE] vertex "output.vm_1_name": starting visit (*terraform.NodeApplyableOutput)
+2021/05/01 17:52:19 [TRACE] ExecuteWriteOutput: Saving Create change for output.vm_1_name in changeset
+2021/05/01 17:52:19 [TRACE] EvalWriteOutput: Removing output.vm_1_name from state (it is now null)
+2021/05/01 17:52:19 [TRACE] vertex "output.vm_1_name": visit complete
+2021/05/01 17:52:19 [TRACE] GRPCProvider: ValidateDataSourceConfig
+2021/05/01 17:52:19 [TRACE] vertex "data.name_details.vm_1_details": visit complete
+2021/05/01 17:52:19 [TRACE] dag/walk: visiting "output.vm_1_details_raw"
+2021/05/01 17:52:19 [TRACE] vertex "output.vm_1_details_raw": starting visit (*terraform.NodeApplyableOutput)
+2021/05/01 17:52:19 [TRACE] dag/walk: visiting "provider[\"sinesio.com/letscloud/letscloud\"] (close)"
+2021/05/01 17:52:19 [TRACE] dag/walk: visiting "output.vm_1_type"
+2021/05/01 17:52:19 [TRACE] vertex "output.vm_1_type": starting visit (*terraform.NodeApplyableOutput)
+2021/05/01 17:52:19 [TRACE] vertex "provider[\"sinesio.com/letscloud/letscloud\"] (close)": starting visit (*terraform.graphNodeCloseProvider)
+2021/05/01 17:52:19 [TRACE] GRPCProvider: Close
+2021/05/01 17:52:19 [TRACE] ExecuteWriteOutput: Saving Create change for output.vm_1_details_raw in changeset
+2021/05/01 17:52:19 [TRACE] EvalWriteOutput: Removing output.vm_1_details_raw from state (it is now null)
+2021/05/01 17:52:19 [TRACE] vertex "output.vm_1_details_raw": visit complete
+2021/05/01 17:52:19 [TRACE] ExecuteWriteOutput: Saving Create change for output.vm_1_type in changeset
+2021/05/01 17:52:19 [TRACE] EvalWriteOutput: Removing output.vm_1_type from state (it is now null)
+2021/05/01 17:52:19 [TRACE] vertex "output.vm_1_type": visit complete
+2021/05/01 17:52:19 [TRACE] dag/walk: visiting "meta.count-boundary (EachMode fixup)"
+2021/05/01 17:52:19 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2021/05/01 17:52:19 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2021-05-01T17:52:19.672-0300 [DEBUG] plugin: plugin process exited: path=.terraform/providers/sinesio.com/letscloud/letscloud/3.0.0/linux_amd64/terraform-provider-letscloud pid=184966
+2021-05-01T17:52:19.672-0300 [DEBUG] plugin: plugin exited
+2021/05/01 17:52:19 [TRACE] vertex "provider[\"sinesio.com/letscloud/letscloud\"] (close)": visit complete
+2021/05/01 17:52:19 [TRACE] dag/walk: visiting "root"
+2021/05/01 17:52:19 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2021/05/01 17:52:19 [TRACE] vertex "root": visit complete
+2021/05/01 17:52:19 [INFO] backend/local: plan calling Plan
+2021/05/01 17:52:19 [INFO] terraform: building graph: GraphTypePlan
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2021/05/01 17:52:19 [TRACE] ConfigTransformer: Starting for path:
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+  data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+  ------
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.LocalTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.OutputTransformer
+2021/05/01 17:52:19 [TRACE] OutputTransformer: adding vm_1_name as *terraform.NodeApplyableOutput
+2021/05/01 17:52:19 [TRACE] OutputTransformer: adding vm_1_type as *terraform.NodeApplyableOutput
+2021/05/01 17:52:19 [TRACE] OutputTransformer: adding vm_1_details_raw as *terraform.NodeApplyableOutput
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+  data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+  output.vm_1_details_raw - *terraform.NodeApplyableOutput
+  output.vm_1_name - *terraform.NodeApplyableOutput
+  output.vm_1_type - *terraform.NodeApplyableOutput
+  ------
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.StateTransformer
+2021/05/01 17:52:19 [TRACE] StateTransformer: state is empty, so nothing to do
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2021/05/01 17:52:19 [TRACE] AttachResourceConfigTransformer: attaching to "data.name_allocation.vm_1_name (expand)" (*terraform.nodeExpandPlannableResource) config from hcl.Range{Filename:"main.tf", Start:hcl.Pos{Line:6, Column:1, Byte:74}, End:hcl.Pos{Line:6, Column:35, Byte:108}}
+2021/05/01 17:52:19 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to data.name_allocation.vm_1_name (expand)
+2021/05/01 17:52:19 [TRACE] AttachResourceConfigTransformer: attaching to "data.name_details.vm_1_details (expand)" (*terraform.nodeExpandPlannableResource) config from hcl.Range{Filename:"main.tf", Start:hcl.Pos{Line:13, Column:1, Byte:187}, End:hcl.Pos{Line:13, Column:35, Byte:221}}
+2021/05/01 17:52:19 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to data.name_details.vm_1_details (expand)
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.ProvisionerTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2021/05/01 17:52:19 [TRACE] ProviderConfigTransformer: attaching to "provider[\"sinesio.com/letscloud/letscloud\"]" provider configuration from main.tf:1,1-21
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+  data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+  output.vm_1_details_raw - *terraform.NodeApplyableOutput
+  output.vm_1_name - *terraform.NodeApplyableOutput
+  output.vm_1_type - *terraform.NodeApplyableOutput
+  provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  ------
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2021/05/01 17:52:19 [TRACE] ProviderTransformer: exact match for provider["sinesio.com/letscloud/letscloud"] serving data.name_details.vm_1_details (expand)
+2021/05/01 17:52:19 [DEBUG] ProviderTransformer: "data.name_details.vm_1_details (expand)" (*terraform.nodeExpandPlannableResource) needs provider["sinesio.com/letscloud/letscloud"]
+2021/05/01 17:52:19 [TRACE] ProviderTransformer: exact match for provider["sinesio.com/letscloud/letscloud"] serving data.name_allocation.vm_1_name (expand)
+2021/05/01 17:52:19 [DEBUG] ProviderTransformer: "data.name_allocation.vm_1_name (expand)" (*terraform.nodeExpandPlannableResource) needs provider["sinesio.com/letscloud/letscloud"]
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  output.vm_1_details_raw - *terraform.NodeApplyableOutput
+  output.vm_1_name - *terraform.NodeApplyableOutput
+  output.vm_1_type - *terraform.NodeApplyableOutput
+  provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  ------
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2021/05/01 17:52:19 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  output.vm_1_details_raw - *terraform.NodeApplyableOutput
+  output.vm_1_name - *terraform.NodeApplyableOutput
+  output.vm_1_type - *terraform.NodeApplyableOutput
+  provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  ------
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2021/05/01 17:52:19 [TRACE] AttachSchemaTransformer: attaching resource schema to data.name_allocation.vm_1_name (expand)
+2021/05/01 17:52:19 [TRACE] AttachSchemaTransformer: attaching resource schema to data.name_details.vm_1_details (expand)
+2021/05/01 17:52:19 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["sinesio.com/letscloud/letscloud"]
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2021/05/01 17:52:19 [DEBUG] ReferenceTransformer: "output.vm_1_name" references: [data.name_allocation.vm_1_name (expand)]
+2021/05/01 17:52:19 [DEBUG] ReferenceTransformer: "output.vm_1_type" references: [data.name_details.vm_1_details (expand)]
+2021/05/01 17:52:19 [DEBUG] ReferenceTransformer: "output.vm_1_details_raw" references: [data.name_details.vm_1_details (expand)]
+2021/05/01 17:52:19 [DEBUG] ReferenceTransformer: "provider[\"sinesio.com/letscloud/letscloud\"]" references: []
+2021/05/01 17:52:19 [DEBUG] ReferenceTransformer: "data.name_allocation.vm_1_name (expand)" references: []
+2021/05/01 17:52:19 [DEBUG] ReferenceTransformer: "data.name_details.vm_1_details (expand)" references: [data.name_allocation.vm_1_name (expand)]
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+    data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  output.vm_1_details_raw - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+  output.vm_1_name - *terraform.NodeApplyableOutput
+    data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+  output.vm_1_type - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+  provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  ------
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2021/05/01 17:52:19 [TRACE] AttachDependenciesTransformer: data.name_allocation.vm_1_name depends on []
+2021/05/01 17:52:19 [TRACE] AttachDependenciesTransformer: data.name_details.vm_1_details depends on [data.name_allocation.vm_1_name]
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.attachDataResourceDependenciesTransformer
+2021/05/01 17:52:19 [TRACE] attachDataDependenciesTransformer: data.name_allocation.vm_1_name depends on []
+2021/05/01 17:52:19 [TRACE] attachDataDependenciesTransformer: data.name_details.vm_1_details depends on []
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.attachDataResourceDependenciesTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2021/05/01 17:52:19 [TRACE] ForcedCBDTransformer: "data.name_allocation.vm_1_name (expand)" (*terraform.nodeExpandPlannableResource) has no CBD descendent, so skipping
+2021/05/01 17:52:19 [TRACE] ForcedCBDTransformer: "data.name_details.vm_1_details (expand)" (*terraform.nodeExpandPlannableResource) has no CBD descendent, so skipping
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+    data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+    data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+    output.vm_1_details_raw - *terraform.NodeApplyableOutput
+    output.vm_1_name - *terraform.NodeApplyableOutput
+    output.vm_1_type - *terraform.NodeApplyableOutput
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  output.vm_1_details_raw - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+  output.vm_1_name - *terraform.NodeApplyableOutput
+    data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+  output.vm_1_type - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+  provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  ------
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+    data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+    data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+    output.vm_1_details_raw - *terraform.NodeApplyableOutput
+    output.vm_1_name - *terraform.NodeApplyableOutput
+    output.vm_1_type - *terraform.NodeApplyableOutput
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  output.vm_1_details_raw - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+  output.vm_1_name - *terraform.NodeApplyableOutput
+    data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+  output.vm_1_type - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+  provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  provider["sinesio.com/letscloud/letscloud"] (close) - *terraform.graphNodeCloseProvider
+    data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+    data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  ------
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+    data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+    data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+    output.vm_1_details_raw - *terraform.NodeApplyableOutput
+    output.vm_1_name - *terraform.NodeApplyableOutput
+    output.vm_1_type - *terraform.NodeApplyableOutput
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  output.vm_1_details_raw - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+  output.vm_1_name - *terraform.NodeApplyableOutput
+    data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+  output.vm_1_type - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+  provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  provider["sinesio.com/letscloud/letscloud"] (close) - *terraform.graphNodeCloseProvider
+    data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+    data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["sinesio.com/letscloud/letscloud"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2021/05/01 17:52:19 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2021/05/01 17:52:19 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+    provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+    data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    output.vm_1_details_raw - *terraform.NodeApplyableOutput
+    output.vm_1_name - *terraform.NodeApplyableOutput
+    output.vm_1_type - *terraform.NodeApplyableOutput
+  output.vm_1_details_raw - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+  output.vm_1_name - *terraform.NodeApplyableOutput
+    data.name_allocation.vm_1_name (expand) - *terraform.nodeExpandPlannableResource
+  output.vm_1_type - *terraform.NodeApplyableOutput
+    data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+  provider["sinesio.com/letscloud/letscloud"] - *terraform.NodeApplyableProvider
+  provider["sinesio.com/letscloud/letscloud"] (close) - *terraform.graphNodeCloseProvider
+    data.name_details.vm_1_details (expand) - *terraform.nodeExpandPlannableResource
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["sinesio.com/letscloud/letscloud"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2021/05/01 17:52:19 [DEBUG] Starting graph walk: walkPlan
+2021/05/01 17:52:19 [TRACE] dag/walk: visiting "provider[\"sinesio.com/letscloud/letscloud\"]"
+2021/05/01 17:52:19 [TRACE] vertex "provider[\"sinesio.com/letscloud/letscloud\"]": starting visit (*terraform.NodeApplyableProvider)
+2021-05-01T17:52:19.674-0300 [INFO]  plugin: configuring client automatic mTLS
+2021-05-01T17:52:19.704-0300 [DEBUG] plugin: starting plugin: path=.terraform/providers/sinesio.com/letscloud/letscloud/3.0.0/linux_amd64/terraform-provider-letscloud args=[.terraform/providers/sinesio.com/letscloud/letscloud/3.0.0/linux_amd64/terraform-provider-letscloud]
+2021-05-01T17:52:19.705-0300 [DEBUG] plugin: plugin started: path=.terraform/providers/sinesio.com/letscloud/letscloud/3.0.0/linux_amd64/terraform-provider-letscloud pid=184981
+2021-05-01T17:52:19.705-0300 [DEBUG] plugin: waiting for RPC address: path=.terraform/providers/sinesio.com/letscloud/letscloud/3.0.0/linux_amd64/terraform-provider-letscloud
+2021-05-01T17:52:19.710-0300 [INFO]  plugin.terraform-provider-letscloud: configuring server automatic mTLS: timestamp=2021-05-01T17:52:19.710-0300
+2021-05-01T17:52:19.744-0300 [DEBUG] plugin.terraform-provider-letscloud: plugin address: address=/tmp/plugin263547447 network=unix timestamp=2021-05-01T17:52:19.744-0300
+2021-05-01T17:52:19.744-0300 [DEBUG] plugin: using plugin: version=5
+2021/05/01 17:52:19 [TRACE] BuiltinEvalContext: Initialized "provider[\"sinesio.com/letscloud/letscloud\"]" provider for provider["sinesio.com/letscloud/letscloud"]
+2021/05/01 17:52:19 [TRACE] buildProviderConfig for provider["sinesio.com/letscloud/letscloud"]: merging explicit config and input
+2021/05/01 17:52:19 [TRACE] GRPCProvider: GetSchema
+2021-05-01T17:52:19.794-0300 [TRACE] plugin.stdio: waiting for stdio data
+2021-05-01T17:52:19.794-0300 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2021/05/01 17:52:19 [TRACE] No provider meta schema returned
+2021/05/01 17:52:19 [TRACE] GRPCProvider: Configure
+2021-05-01T17:52:19.795-0300 [DEBUG] plugin.terraform-provider-letscloud: 2021/05/01 17:52:19 Defaulting environment in URL config to use API default version...
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: panic: Could not init Provider client to letscloud microservice
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud:
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: goroutine 34 [running]:
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: github.com/boxboat/terraform-provider-letscloud/letscloud.NewClient(0xc000462060, 0x231e, 0xc0004fa0c0, 0x9, 0x0, 0x0, 0x203000)
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: 	/home/sinesio/Desktop/Projetos_test/TerraForm/terraform-provider-letscloud/letscloud/client.go:33 +0x238
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: github.com/boxboat/terraform-provider-letscloud/letscloud.newProviderClient(...)
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: 	/home/sinesio/Desktop/Projetos_test/TerraForm/terraform-provider-letscloud/letscloud/provider.go:75
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: github.com/boxboat/terraform-provider-letscloud/letscloud.providerConfigure(0xc000296070, 0x0, 0xc0005c40c0, 0xc000296070, 0x0)
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: 	/home/sinesio/Desktop/Projetos_test/TerraForm/terraform-provider-letscloud/letscloud/provider.go:104 +0x4c8
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: github.com/hashicorp/terraform-plugin-sdk/helper/schema.(*Provider).Configure(0xc000214a00, 0xc000203020, 0xd12e60, 0xc000202ea0)
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: 	/home/sinesio/go/pkg/mod/github.com/hashicorp/terraform-plugin-sdk@v1.1.1/helper/schema/provider.go:275 +0xfc
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: github.com/hashicorp/terraform-plugin-sdk/internal/helper/plugin.(*GRPCProviderServer).Configure(0xc00020c4a8, 0xf641d0, 0xc0000a3dd0, 0xc0001240c0, 0xc00020c4a8, 0xc0000a3dd0, 0xc00013ba50)
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: 	/home/sinesio/go/pkg/mod/github.com/hashicorp/terraform-plugin-sdk@v1.1.1/internal/helper/plugin/grpc_provider.go:487 +0x2ee
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: github.com/hashicorp/terraform-plugin-sdk/internal/tfplugin5._Provider_Configure_Handler(0xdde8c0, 0xc00020c4a8, 0xf641d0, 0xc0000a3dd0, 0xc00004ca20, 0x0, 0xf641d0, 0xc0000a3dd0, 0xc00012c080, 0x36)
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: 	/home/sinesio/go/pkg/mod/github.com/hashicorp/terraform-plugin-sdk@v1.1.1/internal/tfplugin5/tfplugin5.pb.go:3135 +0x214
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: google.golang.org/grpc.(*Server).processUnaryRPC(0xc00037e000, 0xf6ba78, 0xc0001aa780, 0xc00060c100, 0xc000544a50, 0x140aa58, 0x0, 0x0, 0x0)
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: 	/home/sinesio/go/pkg/mod/google.golang.org/grpc@v1.23.0/server.go:995 +0x482
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: google.golang.org/grpc.(*Server).handleStream(0xc00037e000, 0xf6ba78, 0xc0001aa780, 0xc00060c100, 0x0)
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: 	/home/sinesio/go/pkg/mod/google.golang.org/grpc@v1.23.0/server.go:1275 +0xd2c
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: google.golang.org/grpc.(*Server).serveStreams.func1.1(0xc000500800, 0xc00037e000, 0xf6ba78, 0xc0001aa780, 0xc00060c100)
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: 	/home/sinesio/go/pkg/mod/google.golang.org/grpc@v1.23.0/server.go:710 +0xab
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: created by google.golang.org/grpc.(*Server).serveStreams.func1
+2021-05-01T17:52:19.797-0300 [DEBUG] plugin.terraform-provider-letscloud: 	/home/sinesio/go/pkg/mod/google.golang.org/grpc@v1.23.0/server.go:708 +0xa5
+2021-05-01T17:52:19.798-0300 [DEBUG] plugin: plugin process exited: path=.terraform/providers/sinesio.com/letscloud/letscloud/3.0.0/linux_amd64/terraform-provider-letscloud pid=184981 error="exit status 2"
+2021/05/01 17:52:19 [TRACE] vertex "provider[\"sinesio.com/letscloud/letscloud\"]": visit complete
+2021/05/01 17:52:19 [TRACE] dag/walk: upstream of "data.name_allocation.vm_1_name (expand)" errored, so skipping
+2021/05/01 17:52:19 [TRACE] dag/walk: upstream of "data.name_details.vm_1_details (expand)" errored, so skipping
+2021/05/01 17:52:19 [TRACE] dag/walk: upstream of "output.vm_1_details_raw" errored, so skipping
+2021/05/01 17:52:19 [TRACE] dag/walk: upstream of "output.vm_1_type" errored, so skipping
+2021/05/01 17:52:19 [TRACE] dag/walk: upstream of "output.vm_1_name" errored, so skipping
+2021/05/01 17:52:19 [TRACE] dag/walk: upstream of "meta.count-boundary (EachMode fixup)" errored, so skipping
+2021/05/01 17:52:19 [TRACE] dag/walk: upstream of "provider[\"sinesio.com/letscloud/letscloud\"] (close)" errored, so skipping
+2021/05/01 17:52:19 [TRACE] dag/walk: upstream of "root" errored, so skipping
+2021/05/01 17:52:19 [INFO] backend/local: plan operation completed
+2021/05/01 17:52:19 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2021/05/01 17:52:19 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
+2021-05-01T17:52:19.804-0300 [DEBUG] plugin: plugin exited
