@@ -4,7 +4,7 @@
 
 # Terraform Provider for LetsCloud
 
-[![Forums][discuss-badge]][discuss] [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/sinesiobittencourt/terraform-provider-letscloud/main.svg)](https://results.pre-commit.ci/latest/github/sinesiobittencourt/terraform-provider-letscloud/main)
+[![Forums][discuss-badge]][discuss] [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/sinesiobittencourt/terraform-provider-letscloud/main.svg)](https://results.pre-commit.ci/latest/github/sinesiobittencourt/terraform-provider-letscloud/main) [![Build Status](https://travis-ci.com/sinesiobittencourt/terraform-provider-letscloud.svg?branch=main)](https://travis-ci.com/sinesiobittencourt/terraform-provider-letscloud)
 
 
 [discuss-badge]: https://img.shields.io/badge/discuss-terraform--lestcloud-623CE4.svg?style=flat
