@@ -2,17 +2,17 @@
     <img src="https://cdn.rawgit.com/hashicorp/terraform-website/master/content/source/assets/images/logo-hashicorp.svg" alt="Terraform logo" title="Terraform" align="right" height="50" />
 </a>
 
-# Terraform Provider for AWS
+# Terraform Provider for LetsCloud
 
 [![Forums][discuss-badge]][discuss] [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/sinesiobittencourt/terraform-provider-letscloud/main.svg)](https://results.pre-commit.ci/latest/github/sinesiobittencourt/terraform-provider-letscloud/main)
 
 
-[discuss-badge]: https://img.shields.io/badge/discuss-terraform--aws-623CE4.svg?style=flat
-[discuss]: https://discuss.hashicorp.com/c/terraform-providers/tf-aws/
+[discuss-badge]: https://img.shields.io/badge/discuss-terraform--lestcloud-623CE4.svg?style=flat
+[discuss]: https://discuss.hashicorp.com/c/terraform-providers/
 
 - Website: [terraform.io](https://terraform.io)
 - Tutorials: [learn.hashicorp.com](https://learn.hashicorp.com/terraform?track=getting-started#getting-started)
-- Forum: [discuss.hashicorp.com](https://discuss.hashicorp.com/c/terraform-providers/tf-aws/)
+- Forum: [discuss.hashicorp.com](https://discuss.hashicorp.com/c/terraform-providers/)
 - Chat: [gitter](https://gitter.im/hashicorp-terraform/Lobby)
 - Mailing List: [Google Groups](http://groups.google.com/group/terraform-tool)
 
@@ -21,7 +21,6 @@ Use make ;P
 ```
 make .PHONY
 ```
-# Terraform Provider letscloud
 
 ╭─sinesio@NT0298 ~/Desktop/Projetos_test/TerraForm/terraform-provider-letscloud  ‹main*› <br>
 ╰─➤  TF_ACC=1 go test -v  ./letscloud<br>
