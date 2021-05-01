@@ -35,7 +35,7 @@ jobs:
     
     - name: build terraform-provider-letscloud
       run: |
-        go build  -o bin/terraform-provider-letscloud cmd/terraform-provider-letscloud/*
+        go build  -o bin/terraform-provider-letscloud cmd/terraform-provider-letscloud/
     
     - name: Test
       run: go test -v ./...
