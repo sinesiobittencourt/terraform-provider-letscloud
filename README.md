@@ -7,19 +7,14 @@ make .PHONY
 ```
 # Terraform Provider letscloud
 
-╭─sinesio@NT0298 ~/Desktop/Projetos_test/TerraForm/terraform-provider-letscloud  ‹main*›
-╰─➤  TF_ACC=1 go test -v  ./letscloud
-=== RUN   TestProvider
---- PASS: TestProvider (0.00s)
-PASS
-ok      github.com/sinesiobittencourt/terraform-provider-letscloud/letscloud    0.007s
+╭─sinesio@NT0298 ~/Desktop/Projetos_test/TerraForm/terraform-provider-letscloud  ‹main*› <br>
+╰─➤  TF_ACC=1 go test -v  ./letscloud<br>
+=== RUN   TestProvider<br>
+--- PASS: TestProvider (0.00s)<br>
+PASS<br>
+ok      github.com/sinesiobittencourt/terraform-provider-letscloud/letscloud    0.007s<br>
 
-This folder encapsulates the Terraform Provider that issues API calls to the letscloud microservice.
-
-## Disclaimer
-
-This project is meant to be for demonstration purposes only. There are many things that should be improved upon within
-the code before this project would be considered production ready.
+This folder encapsulates the Terraform Provider that issues API calls to the letscloud microservice.<br>
 
 ## Running the example
 
