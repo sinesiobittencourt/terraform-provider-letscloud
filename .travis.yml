@@ -1,0 +1,16 @@
+dist: xenial
+language: go
+#go:
+#  - 1.16
+env:
+  # We want to make sure we have as much information as possible when the tests explode
+  - TF_LOG=DEBUG GO111MODULE=on
+services:
+  - docker
+install:
+  - go install -v ...
+  - docker build -t terraform-provider-letscloud-tests .
+script:
+  - go vet
+  - docker run --rm --name terraform-provider-letscloud-tests terraform-provider-letscloud-tests
+  - go build -o terraform-provider-letscloud
