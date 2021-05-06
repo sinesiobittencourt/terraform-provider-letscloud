@@ -5,6 +5,7 @@
 # Terraform Provider for LetsCloud
 
 [![Forums][discuss-badge]][discuss] [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/sinesiobittencourt/terraform-provider-letscloud/main.svg)](https://results.pre-commit.ci/latest/github/sinesiobittencourt/terraform-provider-letscloud/main) [![Build Status](https://travis-ci.com/sinesiobittencourt/terraform-provider-letscloud.svg?branch=main)](https://travis-ci.com/sinesiobittencourt/terraform-provider-letscloud)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsinesiobittencourt%2Fterraform-provider-letscloud.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsinesiobittencourt%2Fterraform-provider-letscloud?ref=badge_shield)
 
 
 [discuss-badge]: https://img.shields.io/badge/discuss-terraform--lestcloud-623CE4.svg?style=flat
@@ -72,3 +73,6 @@ vm_1_details_raw = {"Name":"M2540TCOLRus","Type":"COL","Region":"us-east-1"}
 vm_1_name = M2540TCOLRus
 vm_1_type = COL
 ```
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsinesiobittencourt%2Fterraform-provider-letscloud.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsinesiobittencourt%2Fterraform-provider-letscloud?ref=badge_large)
